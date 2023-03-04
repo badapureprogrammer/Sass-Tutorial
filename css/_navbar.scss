@@ -2,7 +2,7 @@ nav {
   font-size: 10px;
   font-family: $primary-fontFamily;
   background-color: $primatyBg-color;
-  @include padding(10px, 20px, 10px, 20px);
+  @include padding(15px, 20px, 15px, 20px);
   @include flex(flex, center, space-between, row);
 
   .logo {
@@ -18,12 +18,12 @@ nav {
     li {
       list-style-type: none;
       a {
-        font-size: 1.6em;
         border-radius: 4px;
         color: $primary-color;
         text-decoration: none;
         border: 1px solid #808080;
         transition: all 0.4s ease-in-out;
+        @include font-style(#000, 1.5em);
         @include margin(0px, 0px, 0px, 30px);
         @include padding(5px, 8px, 5px, 8px);
 

@@ -4,7 +4,7 @@
 }
 // This is width-height Function Here
 
-@mixin font-style($color,$size,$weight: 500,$lineHeight: 1.2em,$letterSpace: 0.8px) {
+@mixin font-style($color, $size, $weight: 500, $lineHeight: 1.2em, $letterSpace: 0.8px) {
   color: $color;
   font-size: $size;
   font-weight: $weight;
@@ -12,6 +12,14 @@
   letter-spacing: $letterSpace;
 }
 // This is Font-Style Function Here
+
+@mixin backgroud-Image($image,$size,$repeat,$position){
+  background-image: url($image);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+}
+// This is Backgroud Function Here
 
 @mixin padding($top, $right, $bottom, $left) {
   padding-top: $top;
