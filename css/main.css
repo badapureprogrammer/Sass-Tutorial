@@ -5,15 +5,17 @@
   box-sizing: border-box; }
 
 nav {
-  display: flex;
   font-size: 10px;
-  align-items: center;
-  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
   padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 10px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; }
   nav .logo {
     cursor: pointer; }
     nav .logo h2 {
@@ -21,18 +23,26 @@ nav {
       font-size: 2.5em; }
   nav .menu-list {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; }
     nav .menu-list li {
       list-style-type: none; }
       nav .menu-list li a {
-        color: #000;
-        margin-left: 30px;
         font-size: 1.6em;
-        padding: 4px 8px;
-        text-decoration: none;
         border-radius: 4px;
+        color: #000;
+        text-decoration: none;
+        border: 1px solid #808080;
         transition: all 0.4s ease-in-out;
-        border: 1px solid #808080; }
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+        padding-top: 5px;
+        padding-right: 8px;
+        padding-bottom: 5px;
+        padding-left: 8px; }
         nav .menu-list li a:hover {
           color: #fff;
           background-color: #000; }

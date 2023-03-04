@@ -1,10 +1,9 @@
 nav {
-  display: flex;
   font-size: 10px;
-  align-items: center;
-  justify-content: space-between;
+  font-family: $primary-fontFamily;
   background-color: $primatyBg-color;
   @include padding(10px, 20px, 10px, 20px);
+  @include flex(flex, center, space-between, row);
 
   .logo {
     cursor: pointer;
@@ -14,20 +13,19 @@ nav {
     }
   }
   .menu-list {
-    display: flex;
-    align-items: center;
+    @include flex(flex, center, space-between, row);
 
     li {
       list-style-type: none;
       a {
-        color: $primary-color;
-        margin-left: 30px;
         font-size: 1.6em;
-        padding: 4px 8px;
-        text-decoration: none;
         border-radius: 4px;
-        transition: all 0.4s ease-in-out;
+        color: $primary-color;
+        text-decoration: none;
         border: 1px solid #808080;
+        transition: all 0.4s ease-in-out;
+        @include margin(0px, 0px, 0px, 30px);
+        @include padding(5px, 8px, 5px, 8px);
 
         &:hover {
           color: #fff;

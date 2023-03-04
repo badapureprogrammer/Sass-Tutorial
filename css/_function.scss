@@ -4,10 +4,14 @@
 }
 // This is width-height Function Here
 
-@mixin border-radius($val: 10px) {
-  border-radius: $val;
+@mixin font-style($color,$size,$weight: 500,$lineHeight: 1.2em,$letterSpace: 0.8px) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpace;
 }
-// This is border-radius Function with default value Here
+// This is Font-Style Function Here
 
 @mixin padding($top, $right, $bottom, $left) {
   padding-top: $top;
