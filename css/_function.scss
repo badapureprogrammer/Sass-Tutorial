@@ -1,0 +1,34 @@
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+// This is width-height Function Here
+
+@mixin border-radius($val: 10px) {
+  border-radius: $val;
+}
+// This is border-radius Function with default value Here
+
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+// This is Padding Function Here
+
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+// This is Margin Function Here
+
+@mixin flex($display, $align, $content, $direction) {
+  display: $display;
+  align-items: $align;
+  justify-content: $content;
+  flex-direction: $direction;
+}
+// This is Flex Function Here

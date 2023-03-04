@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "variable";
+// Here Import Variable File
+
+@import "function";
+// Here Import Function File
+
+@import "navbar";
+// Here Import Navbar Component
