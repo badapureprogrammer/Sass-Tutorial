@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: aqua
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 @import "variable";
@@ -16,4 +18,3 @@
 
 @import "about";
 // Here Import About Component
-
